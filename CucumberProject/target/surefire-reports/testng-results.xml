@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test runner" duration-ms="20091" started-at="2022-01-20T10:59:45 IST" finished-at="2022-01-20T11:00:05 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@1e6d1014]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Cucumber Runner" duration-ms="20091" started-at="2022-01-20T10:59:45 IST" finished-at="2022-01-20T11:00:05 IST">
+      <class name="runner.MyRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.MyRunner@1e6d1014]" name="setUpClass" is-config="true" duration-ms="457" started-at="2022-01-20T10:59:45 IST" finished-at="2022-01-20T10:59:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@1e6d1014]" name="runScenario" duration-ms="16824" started-at="2022-01-20T10:59:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T11:00:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Buying New Stock"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Managing Stocks]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at managers.WebDriverManager.select(WebDriverManager.java:116)
+at pages.LandingPage.selectPortFolio(LandingPage.java:14)
+at rediff.steps.Portfolio.selectPortFolio(Portfolio.java:24)
+at ✽.I select portfolio 'My Portfolio1'(file:///C:/Users/Abhishek%20Puri/nov2021/CucumberProject/src/test/resources/stocks/stockmanagement.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@1e6d1014]" name="runScenario" duration-ms="19534" started-at="2022-01-20T10:59:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T11:00:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Selling Stock"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Managing Stocks]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at managers.WebDriverManager.select(WebDriverManager.java:116)
+at pages.LandingPage.selectPortFolio(LandingPage.java:14)
+at rediff.steps.Portfolio.selectPortFolio(Portfolio.java:24)
+at ✽.I select portfolio 'My Portfolio1'(file:///C:/Users/Abhishek%20Puri/nov2021/CucumberProject/src/test/resources/stocks/stockmanagement.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.MyRunner@1e6d1014]" name="tearDownClass" is-config="true" duration-ms="65" started-at="2022-01-20T11:00:05 IST" finished-at="2022-01-20T11:00:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.MyRunner -->
+    </test> <!-- Cucumber Runner -->
+  </suite> <!-- Test runner -->
+</testng-results>

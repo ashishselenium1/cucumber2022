@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-20T10:45:20 IST" name="Test runner" finished-at="2022-01-20T10:45:43 IST" duration-ms="22597">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@759d26fb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-01-20T10:45:20 IST" name="Cucumber Runner" finished-at="2022-01-20T10:45:43 IST" duration-ms="22597">
+      <class name="runner.MyRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.MyRunner@759d26fb]" started-at="2022-01-20T10:45:20 IST" name="setUpClass" finished-at="2022-01-20T10:45:20 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@759d26fb]" started-at="2022-01-20T10:45:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T10:45:32 IST" duration-ms="11403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Selling Stock"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Managing Stocks]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@759d26fb]" started-at="2022-01-20T10:45:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-20T10:45:42 IST" duration-ms="22046" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Buying New Stock"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Managing Stocks]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because the return value of "managers.WebDriverManager.getElement(String)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because the return value of "managers.WebDriverManager.getElement(String)" is null
+at managers.WebDriverManager.type(WebDriverManager.java:109)
+at pages.ManageStocksPage.enterStockDetails(ManageStocksPage.java:18)
+at rediff.steps.Stocks.enterStockDetails(Stocks.java:33)
+at ✽.I fill stock details(file:///C:/Users/Abhishek%20Puri/nov2021/CucumberProject/src/test/resources/stocks/stockmanagement.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.MyRunner@759d26fb]" started-at="2022-01-20T10:45:42 IST" name="tearDownClass" finished-at="2022-01-20T10:45:43 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.MyRunner -->
+    </test> <!-- Cucumber Runner -->
+  </suite> <!-- Test runner -->
+</testng-results>
